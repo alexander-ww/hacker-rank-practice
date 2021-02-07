@@ -8,8 +8,8 @@
 # into the executable file.
 #
 solution: solution.o
-    g++ solution.o -o solution
-    rm solution.o
+	g++ solution.o -o solution
+	rm solution.o
 
 ##
 # Solution.o target
@@ -19,7 +19,7 @@ solution: solution.o
 # solution.cpp source code.
 #
 solution.o: solution.cpp
-    g++ -c solution.cpp
+	g++ -c solution.cpp
 
 ##
 # Clean target
@@ -28,4 +28,4 @@ solution.o: solution.cpp
 # the solution executable.
 #
 clean:
-    rm solution
+	rm solution

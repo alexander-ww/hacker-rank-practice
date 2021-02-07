@@ -300,7 +300,7 @@ vector<int> rotateLeft(int d, vector<int> arr) {
          */
         if (iterations == 0 || started) {
             temporary1 = arr.at(rotated);
-            arr.at(rotated) == arr.at(i);
+            arr.at(rotated) = arr.at(i);
             started = false;
         }
         
