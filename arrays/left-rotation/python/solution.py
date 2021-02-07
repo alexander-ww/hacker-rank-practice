@@ -235,7 +235,7 @@ def rotateLeft(d, arr):
                 # - O(1) space
                 #
                 else:
-                    cycle++
+                    cycle += 1
 
                 ##
                 # Update index.
@@ -351,7 +351,7 @@ def rotateLeft(d, arr):
         # - O(1) time
         # - O(1) space
         #
-        iterations++
+        iterations += 1
 
     return arr
 
