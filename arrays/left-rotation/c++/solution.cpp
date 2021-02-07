@@ -99,7 +99,7 @@ vector<int> rotateLeft(int d, vector<int> arr) {
      *
      * These variables help to temporarily
      * store data and track the iteration
-     * oand current non-rotated index while
+     * and current non-rotated index while
      * traversing through the array.
      *
      * Complexity:
@@ -196,8 +196,8 @@ vector<int> rotateLeft(int d, vector<int> arr) {
              * perform.
              *
              * Every time that iteration concludes
-             * a cycle that we are transitioning
-             * into another cycle by starting that
+             * a cycle, we are transitioning into
+             * another cycle by starting that
              * cycle with its first index.
              *
              * Complexity:
