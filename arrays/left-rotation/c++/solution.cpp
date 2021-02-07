@@ -1,6 +1,5 @@
 #include <vector>
 #include <string>
-#include <ofstream>
 #include <iostream>
 
 using namespace std;
@@ -362,7 +361,6 @@ vector<int> rotateLeft(int d, vector<int> arr) {
 }
 
 int main() {
-    ofstream fout(getenv("OUTPUT_PATH"));
     string first_multiple_input_temp;
     getline(cin, first_multiple_input_temp);
     vector<string> first_multiple_input = split(rtrim(first_multiple_input_temp));
@@ -378,13 +376,12 @@ int main() {
     }
     vector<int> result = rotateLeft(d, arr);
     for (int i = 0; i < result.size(); i++) {
-        fout << result[i];
+        cout << result[i];
         if (i != result.size() - 1) {
-            fout << " ";
+            cout << " ";
         }
     }
-    fout << "\n";
-    fout.close();
+    cout << "\n";
     return 0;
 }
 
