@@ -1,11 +1,18 @@
-# hacker-rank-practice
-This repository provides my solutions to practice problems on [HackerRank](https://www.hackerrank.com).
+# HackerRank Practice
+This repository provides my own solutions to practice problems on [HackerRank](https://www.hackerrank.com).
+The solutions of mine are primarily written in the languages of C/C++, Java, and Python. The solved
+problems are a combination of data structure questions and example questions for technical interviews.
 
 ## Running C++ Solutions
-In order to run the C++ solutions, the _GNU C++_ compiler is required
-along with the _make_ utility. Running _make_ in the directory of a
-C++ solution will perform all of the necessary compiling and linking.
-Running the code can then be performed by invoking the produced executable.
+
+##### Required Tools
+- GNU C++ compiler
+- GNU Make utility
+
+##### Code Execution
+1. Navigate to the directory with the _makefile_
+2. Run the _make_ command in the terminal window
+3. Run the produced executable
 
 ## Running Java Solutions
 In order to run the Java solutions, a version of the Java Development
