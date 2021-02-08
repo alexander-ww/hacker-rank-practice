@@ -8,8 +8,8 @@ been considered.
 
 ## Running C/C++ Solutions
 
-This section provides information on the requirements
-and steps to follow for running solutions written in C/C++.
+This section provides information for
+running solutions written in C/C++.
 
 #### Required Tools
 - GNU C++ compiler
@@ -24,8 +24,8 @@ and steps to follow for running solutions written in C/C++.
 
 ## Running Java Solutions
 
-This section provides information on the requirements
-and steps to follow for running solutions written in Java.
+This section provides information for
+running solutions written in Java.
 
 #### Required Tools
 - Java JDK
@@ -40,8 +40,8 @@ and steps to follow for running solutions written in Java.
 
 ## Running Python Solutions
 
-This section provides information on the requirements
-and steps to follow for running solutions written in Python.
+This section provides information for
+running solutions written in Python.
 
 #### Required Tools
 - Python 3+ interpreter
