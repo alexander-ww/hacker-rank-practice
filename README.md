@@ -1,6 +1,5 @@
 # hacker-rank-practice
-This repository provides my solutions to practice problems in
-a variety of different programming languages.
+This repository provides my solutions to practice problems on [HackerRank](https://www.hackerrank.com).
 
 ## Running C++ Solutions
 In order to run the C++ solutions, the _GNU C++_ compiler is required
