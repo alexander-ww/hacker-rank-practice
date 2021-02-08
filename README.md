@@ -3,7 +3,10 @@ This repository provides my own solutions to practice problems on [HackerRank](h
 The solutions of mine are primarily written in the languages of C/C++, Java, and Python. The solved
 problems are a combination of data structure questions and example questions for technical interviews.
 
-## Running C++ Solutions
+## Running C/C++ Solutions
+
+This section provides information on the requirements
+and steps to follow for running solutions written in C/C++.
 
 #### Required Tools
 - GNU C++ compiler
@@ -18,9 +21,12 @@ problems are a combination of data structure questions and example questions for
 
 ## Running Java Solutions
 
+This section provides information on the requirements
+and steps to follow for running solutions written in Java.
+
 #### Required Tools
 - Java JDK
-- GNU Make Utility
+- GNU Make utility
 
 #### Code Execution
 1. Open a terminal window on your machine
@@ -30,6 +36,9 @@ problems are a combination of data structure questions and example questions for
 5. Provide input in accordance with the _Usage.md_ file in the code directory
 
 ## Running Python Solutions
+
+This section provides information on the requirements
+and steps to follow for running solutions written in Python.
 
 #### Required Tools
 - Python 3+ interpreter
