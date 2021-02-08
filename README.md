@@ -5,24 +5,37 @@ problems are a combination of data structure questions and example questions for
 
 ## Running C++ Solutions
 
-##### Required Tools
+#### Required Tools
 - GNU C++ compiler
 - GNU Make utility
 
-##### Code Execution
-1. Navigate to the directory with the _makefile_
-2. Run the _make_ command in the terminal window
-3. Run the produced executable
+#### Code Execution
+1. Open a terminal window on your machine
+2. Navigate to the directory with the source code and the _makefile_
+3. Run the _make_ command in the terminal window and hit the return key
+4. Launch the produced executable by typing in _./NAME_OF_EXECUTABLE_
+5. Provide input in accordance with the _Usage.md_ file in the code directory.
 
 ## Running Java Solutions
-In order to run the Java solutions, a version of the Java Development
-Kit (JDK) and its associated Java Runtime Environment (JRE) are required.
-Once a JDK is installed, the _make_ utility can be used to compile the
-the Java source code into Java byte code. Running the code can then be
-performed by invoking the produced byte code for the main class with
-the Java interpreter.
+
+#### Required Tools
+- Java JDK
+- GNU Make Utility
+
+#### Code Execution
+1. Open a terminal window on your machine
+2. Navigate to the directory with the source code and the _makefile_
+3. Run the _make_ command in the terminal window and hit the return key
+4. Launch the produced executable by typing in _java NAME_OF_EXECUTABLE_CLASS_
+5. Provide input in accordance with the _Usage.md_ file in the code directory
 
 ## Running Python Solutions
-In order to run the Python solutions, a version of the Python 3.0.0+
-interpreter is required. Simply invoking the Python script with the
-Python interpreter will run the solution.
+
+#### Required Tools
+- Python 3+ interpreter
+
+#### Code Execution
+1. Open a terminal window on your machine
+2. Navigate to the directory with the source code
+3. Launch the script by typing in _python NAME_OF_SCRIPT_
+4. Provide input in accordance with the _Usage.md_ file in the code directory
