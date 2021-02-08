@@ -2,10 +2,9 @@
 This repository provides my own solutions to practice problems on [HackerRank](https://www.hackerrank.com).
 The solutions of mine are primarily written in the languages of C/C++, Java, and Python. The solved
 problems are a combination of data structure questions and example questions for technical interviews.
-
-Throughout my development of these solutions, I have focused on achieving the optimal asymptotic time
-complexity and the optimal asymptotic space complexity. Information for stated problem constraints has
-also been considered.
+While developing these solutions, I have focused on achieving the optimal asymptotic time complexity
+and the optimal asymptotic space complexity. Information for the stated problem constraints has also
+been considered.
 
 ## Running C/C++ Solutions
 
