@@ -15,8 +15,8 @@ and steps to follow for running solutions written in C/C++.
 #### Code Execution
 1. Open a terminal window on your machine
 2. Navigate to the directory with the source code and the _makefile_
-3. Run the _make_ command in the terminal window and hit the return key
-4. Launch the produced executable by typing in _./NAME_OF_EXECUTABLE_
+3. Run the `_make_` command in the terminal window and hit the return key
+4. Launch the produced executable by typing in `_./NAME_OF_EXECUTABLE_`
 5. Provide input in accordance with the _Usage.md_ file in the code directory.
 
 ## Running Java Solutions
@@ -31,8 +31,8 @@ and steps to follow for running solutions written in Java.
 #### Code Execution
 1. Open a terminal window on your machine
 2. Navigate to the directory with the source code and the _makefile_
-3. Run the _make_ command in the terminal window and hit the return key
-4. Launch the produced executable by typing in _java NAME_OF_EXECUTABLE_CLASS_
+3. Run the `_make_` command in the terminal window and hit the return key
+4. Launch the produced executable by typing in `_java NAME_OF_EXECUTABLE_CLASS_`
 5. Provide input in accordance with the _Usage.md_ file in the code directory
 
 ## Running Python Solutions
@@ -46,5 +46,5 @@ and steps to follow for running solutions written in Python.
 #### Code Execution
 1. Open a terminal window on your machine
 2. Navigate to the directory with the source code
-3. Launch the script by typing in _python NAME_OF_SCRIPT_
+3. Launch the script by typing in `_python NAME_OF_SCRIPT_`
 4. Provide input in accordance with the _Usage.md_ file in the code directory
