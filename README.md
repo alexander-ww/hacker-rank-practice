@@ -1,6 +1,4 @@
 # hacker-rank-practice
-
-## Description
 This GitHub repository provides my own solutions to practice problems 
 from HackerRank in a variety of different programming languages.
 
