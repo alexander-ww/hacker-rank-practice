@@ -2,9 +2,7 @@
 
 ## Description
 This GitHub repository provides my own solutions to practice problems 
-from HackerRank in a variety of different programming languages. Each
-of my solutions that I post walk through the process that I apply for
-working toward the optimal time and space complexities.
+from HackerRank in a variety of different programming languages.
 
 ## Running C++ Solutions
 In order to run the C++ solutions, the _GNU C++_ compiler is required
