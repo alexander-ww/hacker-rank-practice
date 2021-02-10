@@ -47,6 +47,13 @@ def printLinkedList(head):
     the head of the singly linked list
     and prints the contents of the
     singly linked list node-by-node.
+
+    :param head: The provided head of the list.
+    :type head: SinglyLinkedListNode
+
+    Complexity:
+    - O(n) time
+    - O(1) space
     """
 
     node = head

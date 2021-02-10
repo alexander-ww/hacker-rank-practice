@@ -85,6 +85,10 @@ void free_singly_linked_list(SinglyLinkedListNode* node) {
  * </p>
  *
  * @param head The head of the list.
+ *
+ * Complexity:
+ * - O(n) time
+ * - O(1) space
  */
 void printLinkedList(SinglyLinkedListNode* head) {
     SinglyLinkedListNode* node = head;

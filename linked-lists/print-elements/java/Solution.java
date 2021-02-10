@@ -78,6 +78,10 @@ public class Solution {
      * </p>
      *
      * @param head The head of the list.
+     *
+     * Complexity
+     * - O(n) time
+     * - O(1) space
      */
     static void printLinkedList(SinglyLinkedListNode head) {
         SinglyLinkedListNode node = head;
