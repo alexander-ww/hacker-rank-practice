@@ -5,8 +5,25 @@ import java.util.*;
 import java.util.concurrent.*;
 import java.util.regex.*;
 
+/**
+ * A solution.
+ *
+ * <p>
+ * The solution class provides a
+ * runnable solution to the problem.
+ * </p>
+ */
 public class Solution {
 
+    /**
+     * A linked list node.
+     *
+     * <p>
+     * The SinglyLinkedListNode class
+     * provides a means for representing
+     * a node in a singly linked list.
+     * </p>
+     */
     static class SinglyLinkedListNode {
         public int data;
         public SinglyLinkedListNode next;
@@ -17,6 +34,15 @@ public class Solution {
         }
     }
 
+    /**
+     * A linked list.
+     *
+     * <p>
+     * The SinglyLinkedList class provides
+     * a means for representing a singly
+     * linked list.
+     * </p>
+     */
     static class SinglyLinkedList {
         public SinglyLinkedListNode head;
 
@@ -25,6 +51,21 @@ public class Solution {
         }
     }
 
+    /**
+     * Prints a singly linked list.
+     *
+     * <p>
+     * This method accepts a singly linked list
+     * node and a string representing a separator
+     * to use. Upon the receipt of these inputs,
+     * the method traverses the list from the provided
+     * linked list node and prints the value of each
+     * node to the console for viewing.
+     * </p>
+     *
+     * @param node The provided linked list node.
+     * @param sep The provided separator.
+     */
     public static void printSinglyLinkedList(SinglyLinkedListNode node, String sep) {
         while (node != null) {
             System.out.println(String.valueOf(node.data));
@@ -32,6 +73,26 @@ public class Solution {
         }
     }
 
+    /**
+     * Inserts a node at the tail of a list.
+     *
+     * <p>
+     * This method accepts a node representing the
+     * head of a linked list and a value for the data of
+     * a new node to add to the end of the linked list.
+     * Upon the receipt of these inputs, the method
+     * adds the new node to the end of the linked list.
+     * </p>
+     *
+     * @param head The provided linked list node.
+     * @param data The provided data for the node to insert.
+     *
+     * @return The head of the modified linked list.
+     *
+     * Complexity:
+     * - O(n) time
+     * - O(1) space
+     */
     static SinglyLinkedListNode insertNodeAtTail(SinglyLinkedListNode head, int data) {
 
         // create last node
