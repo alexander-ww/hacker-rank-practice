@@ -1,3 +1,6 @@
+#include <cstdlib>
+#include <iostream>
+
 using namespace std;
 
 class SinglyLinkedListNode {
@@ -21,14 +24,14 @@ class SinglyLinkedList {
 
 };
 
-void print_singly_linked_list(SinglyLinkedListNode* node, string sep, ofstream& fout) {
+void print_singly_linked_list(SinglyLinkedListNode* node, string sep) {
     while (node) {
-        fout << node->data;
+        cout << node->data;
 
         node = node->next;
 
         if (node) {
-            fout << sep;
+            cout << sep;
         }
     }
 }
@@ -87,7 +90,7 @@ int main()
         llist->head = llist_head;
     }
 
-    print_singly_linked_list(llist->head, "\n", cout);
+    print_singly_linked_list(llist->head, "\n");
     cout << "\n";
 
     free_singly_linked_list(llist->head);
