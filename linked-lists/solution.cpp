@@ -86,7 +86,7 @@ void free_singly_linked_list(SinglyLinkedListNode* node) {
  *
  * @param head The head of the list.
  */
-void printLinkedList(SingleLinkedListNode* head) {
+void printLinkedList(SinglyLinkedListNode* head) {
     SinglyLinkedListNode* node = head;
     while (node != nullptr) {
         cout << node->data << endl;
