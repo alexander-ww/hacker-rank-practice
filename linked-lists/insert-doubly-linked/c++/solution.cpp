@@ -81,7 +81,6 @@ void print_doubly_linked_list(DoublyLinkedListNode* node, string sep) {
             cout << sep;
         }
     }
-    cout << endl;
 }
 
 /**
@@ -106,68 +105,99 @@ void free_doubly_linked_list(DoublyLinkedListNode* node) {
 }
 
 /**
- * Reverses a doubly linked list.
+ * Inserts a node into a sorted doubly-linked list.
  *
  * <p>
- * This method accepts a node representing
- * the head of a doubly-linked list and reverses
- * the doubly linked list by swapping its previous
- * and next pointers. The produced result is the
- * head of the reversed doubly-linked list.
+ * This method accepts a node to the head of a
+ * doubly-linked list and a data value for the node
+ * to insert. Upon the receipt of these inputs, the
+ * method inserts the new node into the doubly
+ * linked list and returns the head of the modified
+ * list as output.
  * </p>
  *
- * @param head The head of the original list.
+ * @param head The head of the doubly-linked list.
+ * @param data The data of the node to insert.
  *
- * @return The head of the reversed list.
+ * @return The head of the modified list.
  *
  * Complexity:
  * - O(n) time
  * - O(1) space
  */
-DoublyLinkedListNode* reverse(DoublyLinkedListNode* head) {
-    DoublyLinkedListNode* reversed = head;
+DoublyLinkedListNode* sortedInsert(DoublyLinkedListNode* head, int data) {
+
+    // store inserted list
+    DoublyLinkedListNode* inserted = head;
+    DoublyLinkedListNode* toInsert = new DoublyLinkedListNode(data);
+
+    // handle empty list
+    if (inserted == nullptr) {
+        inserted = toInsert;
+    }
 
     // handle non-empty list
-    if (reversed != nullptr) {
+    else {
 
-        // reverse previous and next pointers
+        // indicate if insertion occurred
+        bool alreadyInserted = false;
+
+        // iterate through list
         // O(n) time and O(1) space
-        DoublyLinkedListNode* curr = reversed;
-        DoublyLinkedListNode* next = nullptr;
-        DoublyLinkedListNode* prev = nullptr;
-        DoublyLinkedListNode* temp = nullptr;
+        while (inserted != nullptr) {
 
-        // traverse forward and swap pointers
-        while (curr != nullptr) {
+            // handle insertion
+            if (inserted->data >= data) {
 
-            // save previous and next
-            prev = curr->prev;
-            next = curr->next;
+                // handle insertion between nodes
+                if (inserted->prev != nullptr) {
+                    DoublyLinkedListNode* prev = inserted->prev;
+                    inserted->prev->next = toInsert;
+                    inserted->prev = toInsert;
+                    toInsert->next = inserted;
+                    toInsert->prev = prev;
+                }
 
-            // update current node
-            curr->prev = next;
-            curr->next = prev;
+                // handle insertion before first node
+                else {
+                    inserted->prev = toInsert;
+                    toInsert->next = inserted;
+                }
 
-            // go to next node
-            curr = next;
-        }
-
-        // rewind to head
-        // O(n) time and O(1) space
-        while (reversed != nullptr) {
-            if (reversed->prev != nullptr) {
-                reversed = reversed->prev;
+                // update insertion status
+                alreadyInserted = true;
             }
-            else {
+
+            // handle full traversal without insertion
+            if (inserted->next == nullptr && !alreadyInserted) {
+                inserted->next = toInsert;
+                toInsert->prev = inserted;
+                alreadyInserted = true;
+            }
+
+            // handle insertion (rewind to head)
+            if (alreadyInserted) {
+                while (inserted != nullptr) {
+                    if (inserted->prev != nullptr) {
+                        inserted = inserted->prev;
+                    }
+                    else {
+                        break;
+                    }
+                }
                 break;
             }
+
+            // update list pointer
+            inserted = inserted->next;
         }
     }
 
-    return reversed;
+    return inserted;
 }
 
-int main() {
+int main()
+{
 
     int t;
     cin >> t;
@@ -188,9 +218,14 @@ int main() {
             llist->insert_node(llist_item);
         }
 
-        DoublyLinkedListNode* llist1 = reverse(llist->head);
+        int data;
+        cin >> data;
+        cin.ignore(numeric_limits<streamsize>::max(), '\n');
+
+        DoublyLinkedListNode* llist1 = sortedInsert(llist->head, data);
 
         print_doubly_linked_list(llist1, " ");
+        cout << endl;
 
         free_doubly_linked_list(llist1);
     }
