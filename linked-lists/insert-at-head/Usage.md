@@ -1,40 +1,58 @@
 # Insert at Head Usage
 
-## First Line
-In order to run the insert at head code, you will need to first
-enter a single positive integer. This positive integer will be the
-size of the linked list. Once this positive integer has been entered,
-you will then need to hit the return key.
+Given a pointer to the head of a linked list, insert a new node before the head.
+The _next_ value in the new node should point to _head_ and the _data_ value
+should be replaced with a given value. Return a reference to the new head of
+the list. The head pointer may be null, meaning that the initial list is empty.
 
-## Subsequent Lines
-Next, you will need to enter a single value per line for each and
-every single one of the entries that you intend to add for the linked
-list of the size you have specified.
+## Function Description
 
-## Result
-The result of running the program will be a line-by-line print of
-the values in the newly-produced linked list. The linked list that
-is produced should be in the reverse order in which you had
-entered the values in the lines following the first input line.
+Complete the function _insertNodeAtHead_ in the editor below.
 
-## Example
-Below is an example of running the insert at head program. As
-previously described, the first line contains the size of the linked
-list to print. The subsequent lines then contain the values for the
-nodes in the linked list, which are then followed by the printing of
-those same values in reverse order when performing the linked
-list traversal.
+_insertNodeAtHead_ has the following parameters(s):
+- SinglyLinkedListNode llist: a reference to the head of a list
+- data: the value to insert in the _data_ field of the new node
+
+## Input Format
+
+The first line contains an integer _n_, the number of elements to be
+inserted at the head of the list. The next _n_ lines contain an integer
+each, the elements to be inserted, one per function call.
+
+## Constraints
+
+- 1 <= _n_ <= 1000
+- 1 <= _list[i]_ <= 1000
+
+## Sample Input
 
 ```
 5
-1
-2
-3
-4
-5
-5
-4
-3
-2
-1
+383
+484
+392
+975
+321
 ```
+
+## Sample Output
+
+```
+321
+975
+392
+484
+383
+```
+
+## Explanation
+
+Initially the list is _NULL_. After inserting 383, the list is 383 -> _NULL_
+
+After inserting 484, the list is 484 -> 383 -> _NULL_
+
+After inserting 392, the list is 392 -> 484 -> 383 -> _NULL_
+
+After inserting 975, the list is 975 -> 392 -> 484 -> 383 -> _NULL_
+
+After inserting 321, the list is 321 -> 975 -> 392 -> 484 -> 383 -> _NULL_
