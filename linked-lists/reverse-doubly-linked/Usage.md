@@ -1,29 +1,45 @@
 # Reverse Doubly Linked
 
-## First Line
-In order to run the reverse doubly-linked list program, you will need
-to first enter a single positive integer. This positive integer will be the
-number of tests to run.
+Given the pointer to the head node of a doubly-linked list, reverse
+the order of the nodes in place. That is, change the next and prev
+pointers of the nodes so that the direction of the list is reversed.
+Return a reference to the head node of the reversed list.
 
-## Second Line
-Next, you will need to provide a single positive integer
-for the size of the doubly-linked list for the test instance.
+## Note
 
-## Subsequent Lines
-Next, you will need to enter a single value per line for each and
-every single one of the entries that are nodes in the doubly linked
-list that will be reversed for the test instance. Once, the values for
-a test instance have been added, go and add another second line
-and the subsequent lines for subsequent test instances if there are
-more than one test instance.
+The head node might be _NULL_ to indicate that the list is empty.
 
-## Result
-The result of running the program is a single-line 
-print of the node values in the reversed linked list.
+## Function Description
 
-## Example
-Below is an example of running the reverse 
-doubly-linked list program for a single test instance.
+Complete the _reverse_ function.
+
+_reverse_ has the following parameter(s):
+- DoublyLinkedListNode head: a reference to the head of a DoublyLinkedList
+
+Returns
+- DoublyLinkedListNode: a reference to the head of the reversed list
+
+## Input Format
+
+The first line contains an integer _t_, the number of test cases.
+
+Each test case is of the following format:
+- The first line contains an integer _n_, the number of elements in the linked list
+- The next _n_ lines contain an integer each denoting an element of the linked list
+
+## Constraints
+
+- 1 <= _t_ <= 10
+- 0 <= _n_ <= 1000
+- 0 <= DoublyLinkedListNode.data <= 1000
+
+# Output Format
+
+Return a reference to the head of your reversed list. The provided code will
+print the reverse array as one line of space-separated integers for each test
+case.
+
+## Sample Input
 
 ```
 1
@@ -32,5 +48,16 @@ doubly-linked list program for a single test instance.
 2
 3
 4
+```
+
+## Sample Output
+
+```
 4 3 2 1
 ```
+
+## Explanation
+
+The initial doubly linked list is: 1 <-> 2 <-> 3 <-> 4 -> _NULL_
+
+The reversed doubly linked list is: 4 <-> 3 <-> 2 <-> 1 -> _NULL_
