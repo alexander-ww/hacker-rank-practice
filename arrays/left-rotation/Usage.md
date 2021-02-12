@@ -1,32 +1,56 @@
-# Left Rotation Usage
+# Left Rotation
 
-## First Line
-In order to run the left-rotation code, you will need to first 
-enter two positive integers. The first of those positive integers
-will be the size of the array that is to be rotated and the second
-of those positive integers will be the number of rotations to perform.
-Once these two positive integers have been entered, you will then need
-to hit the return key.
-
-## Second Line
-Next, you will need to enter a line of space-separated integers 
-that represent values in the array of the size that you had
-previous specified. Once these array values have been entered, 
-you can then hit the return key.
-
-## Result
-The result of running the program will be a printed array of
-values that is the left rotation of the original array of values.
+A left rotation operation on an array of size _n_ shifts each of the
+array's elements 1 unit to the left. Given an integer, _d_, rotate
+the array that many steps left and return the result.
 
 ## Example
-Below is an example of running the left-rotation program. As
-previously described, the first line contains the size of the
-array to rotate and the number of positions by which to rotate
-left. The second line contains the array values. The third line
-contains the output after performing the left rotation operation.
+
+_d_ = 2
+
+_arr_ = [1, 2, 3, 4, 5]
+
+After 2 rotations, _arr'_ = [3, 4, 5, 1, 2]
+
+## Function Description
+
+Complete the _rotateLeft_ function.
+
+_rotateLeft_ has the following parameters:
+- int d: the amount to rotate by
+- int arr[n]: the array to rotate
+
+## Returns
+
+- int[n]: the rotated array
+
+## Input Format
+
+The first line contains two space-separated integers that denote _n_, the
+number of integers, and _d_, the number of left rotations to perform. The
+second line contains _n_ space-separated integers that describe _arr[]_.
+
+## Constraints
+
+- 1 <= _n_ <= 10^5
+- 1 <= _d_ <= _n_
+- 1 <= _a[i]_ <= 10^6
+
+## Sample Input
 
 ```
 5 4
 1 2 3 4 5
+```
+
+## Sample Output
+
+```
 5 1 2 3 4
 ```
+
+## Explanation
+
+To perform _d_ = 4 left rotations, the array undergoes the following sequence of
+changes: [1, 2, 3, 4, 5] -> [2, 3, 4, 5, 1] -> [3, 4, 5, 1, 2] -> [4, 5, 1, 2, 3] -> 
+[5, 1, 2, 3, 4].
