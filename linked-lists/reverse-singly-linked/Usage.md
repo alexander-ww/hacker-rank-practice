@@ -1,26 +1,43 @@
 # Reverse Singly Linked
 
-## First Line
-In order to run the reverse singly-linked lists program, you 
-will need to first enter a single positive integer. This positive
-integer will be the number of tests to run.
-
-## Second Line
-Next, you will need to provide a single positive integer
-for the size of the singly-linked list for the test instance.
-
-## Subsequent Lines
-Next, you will need to enter a single value per line for each and
-every single one of the entries that are nodes in the singly-linked
-list in the test instance.
-
-## Result
-The result of running the program is a single-line 
-print of the node values in the reversed linked list.
+Given the pointer to the head node of a linked list, change the _next_
+pointers of the nodes so that their order is reversed. The head pointer
+given may be null, meaning that the initial list is empty.
 
 ## Example
-Below is an example of running the reverse
-singly linked program for a single test instance.
+
+_head_ references the list 1 -> 2 -> 3 -> _NULL_
+
+Manipulate the _next_ pointers of each node in place and return _head_,
+now referencing the head of the list 3 -> 2 -> 1 -> _NULL_.
+
+## Function Description
+
+Complete the _reverse_ function.
+
+_reverse_ has the following parameter:
+- SinglyLinkedListNode pointer head: a reference to the head of a list
+
+## Returns
+
+-SinglyLinkedListNode pointer: a reference to the head of the reversed list
+
+## Input Format
+
+The first line contains an integer _t_, the number of test cases.
+
+Each test case has the following format:
+The first line contains an integer _n_, the number of elements in the
+linked list. Each of the next _n_ lines contains an integer, the _data_
+values of the elements in the linked list.
+
+## Constraints
+
+- 1 <= _t_ <= 10
+- 1 <= _n_ <= 1000
+- 1 <= _list[i]_ <= 1000, where _list[i]_ is the ith element in the list
+
+## Sample Input
 
 ```
 1
@@ -30,5 +47,16 @@ singly linked program for a single test instance.
 3
 4
 5
+```
+
+## Sample Output
+
+```
 5 4 3 2 1
 ```
+
+## Explanation
+
+The initial linked list is: 1 -> 2 -> 3 -> 4 -> 5 -> _NULL_
+
+The reversed linked list is: 5 -> 4 -> 3 -> 2 -> 1 -> _NULL_
