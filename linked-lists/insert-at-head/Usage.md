@@ -1,4 +1,4 @@
-# Insert at Head Usage
+# Insert at Head
 
 Given a pointer to the head of a linked list, insert a new node before the head.
 The _next_ value in the new node should point to _head_ and the _data_ value
