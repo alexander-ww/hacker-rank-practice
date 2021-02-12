@@ -1,38 +1,50 @@
-# Print Elements Usage
+# Print Elements
 
-## First Line
-In order to run the print elements code, you will need to first
-enter a single positive integer. This positive integer will be the
-size of the linked list. Once this positive integer has been entered,
-you will then need to hit the return key.
+This is an opportunity to practice traversing a linked list. Given a
+pointer to the head node of a linked list, print each node's _data_
+element, one per line. If the head pointer is null (indicating the
+list is empty), there is nothing to print.
 
-## Subsequent Lines
-Next, you will need to enter a single value per line for each and
-every single one of the entries in the linked list of the size you
-have specified.
+## Function Description
 
-## Result
-The result of running the program will be a line-by-line print of
-the values of the linked list that should mirror the input that you
-entered following your first input line.
+Complete the _printLinkedList_ function.
 
-## Example
-Below is an example of running the print elements program. As
-previously described, the first line contains the size of the linked
-list to print. The subsequent lines then contain the values for the
-nodes in the linked list, which are then followed by the printing of
-those same values when performing the linked-list traversal.
+_printLinkedList_ has the following parameter(s):
+- SinglyLinkedListNode head: a reference to the head of the list
+
+## Print
+
+- For each node, print its _data_ value on a new line.
+
+# Input Format
+
+The first line of input contains _n_, the number of elements in the linked
+list. The next _n_ lines contain one element each, the _data_ values for
+each node.
+
+<b>Note</b>: Do not read any input from the standard input stream or console.
+Complete the _printLinkedList_ function.
+
+## Constraints
+- 1 <= _n_ <= 1000
+- 1 <= _list[i]_ <= 1000, where _list[i]_ is the ith element of the linked list.
+
+## Sample Input
 
 ```
-5
-1
 2
-3
-4
-5
-1
-2
-3
-4
-5
+16
+13
 ```
+
+## Sample Output
+
+```
+16
+13
+```
+
+## Explanation
+
+There are two elements in the linked list. They are represented as 16 -> 13 -> _NULL_.
+So, the _printLinkedList_ function should print 16 and 13 each on a new line.
