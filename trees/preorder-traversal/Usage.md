@@ -7,7 +7,8 @@ values.
 
 ## Input Format
 
-Our test code passes the root node of a binary tree to the _preOrder_ function.
+The user provides the size of the tree on the first line of input.
+The user then provides the nodes on the second line of input.
 
 ## Constraints
 
@@ -29,6 +30,11 @@ Print the tree's preorder traversal as a single line of space-separated values.
   3   6
    \
     4
+```
+
+```
+6
+1 2 5 3 4 6
 ```
 
 ## Sample Output

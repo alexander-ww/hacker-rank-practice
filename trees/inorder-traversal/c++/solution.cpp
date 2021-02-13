@@ -24,44 +24,45 @@ class Solution {
             }
             else {
                 Node* cur;
-                if (data <= root->data) {
+                if(data <= root->data) {
                     cur = insert(root->left, data);
                     root->left = cur;
                 }
                 else {
                     cur = insert(root->right, data);
                     root->right = cur;
-               }
+                }
 
                return root;
             }
         }
 
         /**
-         * Prints the pre-order traversal.
+         * Prints the in-order traversal.
          *
          * <p>
-         * The time bound is optimal since every
-         * node has to be viewed once. The space
-         * bound is not optimal since we can develop
-         * an iterative solution that avoids use of the
-         * stack.
+         * This method accepts a pointer to the
+         * root node of a binary tree and prints
+         * the tree in order.
          * </p>
          *
-         * <p>
-         * The optimal complexities for this
-         * problem are O(n) time and O(1) space.
-         * </p>
+         * @param root The provided root node.
          *
          * Complexity:
          * - O(n) time
          * - O(n) space
          */
-        void preOrder(Node *root) {
+        void inOrder(Node *root) {
             if (root != nullptr) {
-                cout << root->data << " ";
-                preOrder(root->left);
-                preOrder(root->right);
+                if (root->left != nullptr) {
+                    inOrder(root->left);
+                    cout << root->data << " ";
+                    inOrder(root->right);
+                }
+                else {
+                    cout << root->data << " ";
+                    inOrder(root->right);
+                }
             }
         }
 };
@@ -81,7 +82,7 @@ int main() {
         root = myTree.insert(root, data);
     }
   
-    myTree.preOrder(root);
+    myTree.inOrder(root);
     cout << endl;
     return 0;
 }
