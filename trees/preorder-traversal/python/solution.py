@@ -56,7 +56,7 @@ def preOrder(root):
     """
 
     if root is not None:
-        sys.stdout.write(root.data + " ")
+        sys.stdout.write(str(root.info) + " ")
         preOrder(root.left)
         preOrder(root.right)
 
@@ -70,3 +70,4 @@ for i in range(t):
     tree.create(arr[i])
 
 preOrder(tree.root)
+print()
