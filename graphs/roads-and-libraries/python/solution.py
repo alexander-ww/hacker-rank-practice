@@ -311,4 +311,4 @@ if __name__ == '__main__':
             cities.append(list(map(int, input().rstrip().split())))
 
         result = roadsAndLibraries(n, c_lib, c_road, cities)
-        print(str(result) + '\n')
+        print(str(result))
